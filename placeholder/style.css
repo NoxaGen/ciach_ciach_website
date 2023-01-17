@@ -1,0 +1,15 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(chrome_bQSPwhLZrB.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: green;
+}
+
+@media (orientation: portrait) {
+    body {
+        background-image: url(chrome_l1jIv2k2Tu.jpg);
+    }
+}
