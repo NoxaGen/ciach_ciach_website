@@ -51,6 +51,7 @@
 .introduction {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     width: 100%;
     height: 90vh;
     background-image: url(./images/backgrounds/drewniany-dom-ogrod-mobile-small-portrait.jpg);
@@ -81,8 +82,15 @@
 }
 
 .introduction button {
-    width: 40%;
-    margin: 0 auto;
-    font-family: var(--text-font);
+    width: 65%;
+    margin: 0 auto 10px auto;
+    font-family: var(--title-font);
     background-color: var(--green-darker);
+    height: 40px;
+    border: none;
+    border-radius: 5%;
+    font-size: 1.2rem;
+    color: var(--background-color);
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
