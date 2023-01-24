@@ -8,6 +8,10 @@
 :root {
     --background-color: rgb(255, 255, 255);
     --grey-color: rgb(96, 96, 96);
+    --title-font: 'Unbounded', 'Arial';
+    --text-font: 'Open+Sans', 'Arial';
+    --green-lighter: rgb(105, 152, 61);
+    --green-darker: rgb(75 107 43);
 }
 
 /* starting from iPhone SE5 (small) */
@@ -45,10 +49,40 @@
 }
 
 .introduction {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 90vh;
     background-image: url(./images/backgrounds/drewniany-dom-ogrod-mobile-small-portrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
 
+.introduction h1 {
+    font-family: var(--title-font);
+    color: var(--background-color);
+    font-size: 2.8rem;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    line-height: 120%;
+    font-weight: 900;
+    text-align: center;
+}
+
+.introduction p {
+    font-family: var(--title-font);
+    color: var(--background-color);
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 1.5px;
+    line-height: 150%;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.introduction button {
+    width: 40%;
+    margin: 0 auto;
+    font-family: var(--text-font);
+    background-color: var(--green-darker);
 }
