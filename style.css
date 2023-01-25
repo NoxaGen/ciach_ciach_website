@@ -13,6 +13,11 @@
     --text-font: 'Open+Sans', 'Arial';
     --green-lighter: rgb(105, 152, 61);
     --green-darker: rgb(75 107 43);
+    --shadow: 1px 1px 2px 2px rgba(172, 165, 165, 0.9);
+}
+
+.wrapper {
+    background-color: var(--background-color-2);
 }
 
 /* starting from iPhone SE5 (small) */
@@ -116,9 +121,29 @@
     transform: translateX(-50%);
     height: 400px;
     width: 88%;
-    border: 1px solid var(--grey-color);
+    border: none;
     border-radius: 1% 2%;
+    overflow: hidden;
+    box-shadow: var(--shadow);
 }
+
+.what-we-do .slider img {
+    opacity: 0;
+    transition: 1s linear;
+    width: 100%;
+}
+
+.what-we-do .slider img.active {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
 
 
 .full-list-services {
