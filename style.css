@@ -7,6 +7,7 @@
 
 :root {
     --background-color: rgb(255, 255, 255);
+    --background-color-2: rgb(242, 242, 242);
     --grey-color: rgb(96, 96, 96);
     --title-font: 'Unbounded', 'Arial';
     --text-font: 'Open+Sans', 'Arial';
@@ -101,4 +102,25 @@
     letter-spacing: 1.5px;
 }
 
-.what-we-do .slider {}
+.what-we-do {
+    position: relative;
+    background-color: var(--background-color-2);
+    width: 100vw;
+}
+
+.what-we-do .slider {
+    position: relative;
+    margin: 6vw 0px;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    width: 88%;
+    border: 1px solid var(--grey-color);
+    border-radius: 1% 2%;
+}
+
+
+.full-list-services {
+    position: relative;
+}
