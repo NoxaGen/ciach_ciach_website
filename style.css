@@ -17,10 +17,13 @@
 /* starting from iPhone SE5 (small) */
 
 .nav-bar {
+    position: fixed;
+    top: 0%;
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    height: 80px;
+    height: 70px;
+    z-index: 2;
     background-color: var(--background-color)
 }
 
@@ -50,6 +53,9 @@
 
 .introduction {
     display: flex;
+    position: relative;
+    margin-top: 70px;
+    z-index: 1;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
@@ -62,7 +68,7 @@
 .introduction h1 {
     font-family: var(--title-font);
     color: var(--background-color);
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     padding: 10px 20px;
     letter-spacing: 2px;
     line-height: 120%;
@@ -94,3 +100,5 @@
     font-weight: 600;
     letter-spacing: 1.5px;
 }
+
+.what-we-do .slider {}
