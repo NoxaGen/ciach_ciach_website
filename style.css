@@ -14,7 +14,7 @@
     --text-font: 'Open+Sans', 'Arial';
     --green-lighter: rgb(105, 152, 61);
     --green-darker: rgb(75 107 43);
-    --shadow: 1px 1px 2px 2px rgba(172, 165, 165, 0.9);
+    --shadow: 3px 3px 10px 10px rgba(104, 104, 104, 0.295);
 }
 
 .wrapper {
@@ -151,7 +151,10 @@
 .what-we-do .slider img {
     opacity: 0;
     transition: 1s linear;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+
 }
 
 .what-we-do .slider img.active {
@@ -205,7 +208,7 @@
 
 .full-list-services h2 {
     font-size: 2rem;
-    text-align: center;
+    padding-left: 8vw;
 }
 
 /* animations */
