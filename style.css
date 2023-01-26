@@ -7,8 +7,9 @@
 
 :root {
     --background-color: rgb(255, 255, 255);
-    --background-color-2: rgb(242, 242, 242);
+    --background-color-2: rgb(245, 245, 245);
     --grey-color: rgb(96, 96, 96);
+    --dark-grey-color: rgb(23, 23, 23);
     --title-font: 'Unbounded', 'Arial';
     --text-font: 'Open+Sans', 'Arial';
     --green-lighter: rgb(105, 152, 61);
@@ -18,6 +19,8 @@
 
 .wrapper {
     background-color: var(--background-color-2);
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /* starting from iPhone SE5 (small) */
@@ -94,6 +97,7 @@
 }
 
 .introduction button {
+    position: relative;
     width: 65%;
     margin: 0 auto 10px auto;
     font-family: var(--title-font);
@@ -107,10 +111,27 @@
     letter-spacing: 1.5px;
 }
 
+.introduction button span {
+    position: absolute;
+    display: block;
+    top: 0%;
+    left: 50%;
+    color: var(--background-color);
+    animation: arrow 3s infinite linear;
+}
+
+.introduction button span i {
+    position: absolute;
+    font-size: 1.5rem;
+    transform: translate(-50%, -150%);
+}
+
 .what-we-do {
     position: relative;
     background-color: var(--background-color-2);
     width: 100vw;
+    font-family: var(--title-font);
+    color: var(--dark-grey-color);
 }
 
 .what-we-do .slider {
@@ -137,15 +158,102 @@
     opacity: 1;
 }
 
+.what-we-do h2 {
+    color: var(--dark-grey-color);
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding: 20px 8vw;
+}
 
+.what-we-do .small-title {
+    display: flex;
+    flex-direction: row;
+    width: 84vw;
+}
 
+.what-we-do .small-title span {
+    position: relative;
+    margin-left: 8vw;
+    border-bottom: 1px solid var(--dark-grey-color);
+    transform: translateY(-50%);
+    width: 45%;
+}
 
+.what-we-do .small-title p {
+    padding-left: 10px;
+    font-size: 1.4rem;
+}
 
+.what-we-do .short-list ul {
+    margin: 20px 8vw 20px 12vw;
+}
 
-
-
-
+.what-we-do .short-list ul li {
+    font-weight: 300;
+    font-size: 1.6rem;
+    padding: 5px;
+    letter-spacing: 1.5px;
+}
 
 .full-list-services {
     position: relative;
+}
+
+/* animations */
+
+@keyframes arrow {
+    0% {
+        transform: translateY(-300px);
+        opacity: 0.5;
+    }
+
+    10% {
+        transform: translateY(-250px);
+        opacity: 0.6;
+    }
+
+    20% {
+        transform: translateY(-200px);
+        opacity: 0.7;
+    }
+
+    30% {
+        transform: translateY(-150px);
+        opacity: 0.7;
+    }
+
+    40% {
+        transform: translateY(-100px);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translateY(-50px);
+        opacity: 0.9;
+    }
+
+    60% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    90% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
