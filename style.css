@@ -247,11 +247,10 @@ html {
 }
 
 .full-list-services .service h3 {
-    padding: 0px 7.5vw;
     font-size: 2rem;
-    line-height: 150%;
 }
 
+.full-list-services .service h3,
 .full-list-services .service p,
 .full-list-services .service p strong {
     padding: 0px 7.5vw;
@@ -408,7 +407,10 @@ footer .rights a {
     color: var(--footer-title)
 }
 
+/* landscape mobile  */
+
 @media (orientation: landscape) {
+
     .introduction {
         height: 600px;
         background-image: url(./images/mobile_horizontal/backgrounds/background_dom_ogrod.jpg);
@@ -465,51 +467,53 @@ footer .rights a {
     section.full-list-services>div:nth-child(8)>div>img {
         content: url(./images/mobile_horizontal/services_main_page/pracownicy-budowlani.jpg);
     }
-}
 
-.full-list-services .service h3,
-.full-list-services .service p,
-.full-list-services .service p strong {
-    padding: 0px 15vw;
-}
 
-.full-list-services .service p strong {
-    padding: 0px;
-}
+    .full-list-services .service h3,
+    .full-list-services .service p,
+    .full-list-services .service p strong {
+        padding: 0px 15vw;
+    }
 
-.full-list-services .service button {
-    width: 40%;
-}
+    .full-list-services .service p strong {
+        padding: 0px;
+    }
 
-.what-we-do h2,
-.opinions h2 {
-    padding: 20px 15vw;
-}
+    .full-list-services .service button {
+        width: 40%;
+    }
 
-.opinions p {
-    padding-left: 15vw;
-}
+    .what-we-do h2,
+    .opinions h2 {
+        padding: 20px 15vw;
+    }
 
-.opinions .opinion .white-box p {
-    padding: 30px;
-}
+    .opinions p {
+        padding-left: 15vw;
+    }
 
-section.opinions>div:nth-child(4) {
-    background-image: url(./images/mobile_horizontal/opinions/zraszacz-podlewa-ogrod.jpg);
-}
+    .opinions .opinion .white-box p {
+        padding: 30px;
+    }
 
-section.opinions>div:nth-child(5) {
-    background-image: url(./images/mobile_horizontal/opinions/piekny-ogrod-klientki.jpg);
-}
+    section.opinions>div:nth-child(4) {
+        background-image: url(./images/mobile_horizontal/opinions/zraszacz-podlewa-ogrod.jpg);
+    }
 
-section.opinions>div:nth-child(6) {
-    background-image: url(./images/mobile_horizontal/opinions/fontanna-w-ogrodzie.jpg);
-}
+    section.opinions>div:nth-child(5) {
+        background-image: url(./images/mobile_horizontal/opinions/piekny-ogrod-klientki.jpg);
+    }
 
-.main-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    section.opinions>div:nth-child(6) {
+        background-image: url(./images/mobile_horizontal/opinions/fontanna-w-ogrodzie.jpg);
+    }
+
+    .main-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 /* quick medias for bigger phones screens */
