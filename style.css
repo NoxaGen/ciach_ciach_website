@@ -405,11 +405,61 @@ footer .rights a {
 @media (orientation: landscape) {
     .introduction {
         height: 600px;
+        background-image: url(./images/mobile_horizontal/backgrounds/background_dom_ogrod.jpg);
     }
 
     .introduction h1 {
         padding: 30px 50px;
     }
+
+    .introduction p {
+        padding: 20px 50px;
+    }
+
+    .what-we-do .slider {
+        height: 600px;
+        width: 60%;
+    }
+
+    .full-list-services .service .img-of-service {
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    section.full-list-services>div:nth-child(2)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/ogrodnik-zakladanie-ogrodu.jpg);
+    }
+
+    section.full-list-services>div:nth-child(3)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/ogrodnik-pielegnacja-ogrodu.jpg);
+    }
+
+    section.full-list-services>div:nth-child(4)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/zraszacz-systemy-nawodnien.jpg)
+    }
+
+    section.full-list-services>div:nth-child(5)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/aranzacja-zieleni.jpg);
+    }
+
+    section.full-list-services>div:nth-child(6)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/outsourcing-grafika.jpg);
+    }
+
+    section.full-list-services>div:nth-child(7)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/oprysk-ogrodu.jpg);
+    }
+
+    section.full-list-services>div:nth-child(8)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/pracownicy-budowlani.jpg);
+    }
+
+
+
+
+
 }
 
 
