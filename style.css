@@ -414,6 +414,8 @@ footer .rights a {
 
 
 
+/* quick medias for bigger phones screens */
+
 @media (min-width: 375px) {
     .introduction h1 {
         font-size: 3rem;
@@ -432,9 +434,6 @@ footer .rights a {
         font-size: 3rem;
     }
 }
-
-
-/* this media for quick look: */
 
 /* animations */
 
