@@ -148,9 +148,7 @@ html {
 }
 
 .what-we-do .slider {
-
     margin: 6vw 0px;
-
     height: 400px;
     width: 88%;
     border: none;
@@ -604,18 +602,91 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .what-we-do {
-        display: flex;
+        padding: 0px 7.5vw;
         flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+    .what-we-do h2 {
+        padding: 30px;
+        font-size: 4rem;
     }
 
     .what-we-do .slider {
-
-        width: 45%;
+        width: 50%;
+        height: 600px;
     }
 
     .what-we-do .description {
-        width: 45%;
+        width: 50%;
     }
+
+    .what-we-do .small-title span {
+        width: 25%;
+        margin-left: 30px;
+    }
+
+    .what-we-do .small-title p {
+        font-size: 2rem;
+    }
+
+    .what-we-do .short-list ul {
+        margin: 20px;
+    }
+
+    .what-we-do .short-list ul li {
+        font-size: 2rem;
+    }
+
+    .full-list-services h2,
+    .full-list-services .service h3 {
+        font-size: 2.5rem;
+    }
+
+    .full-list-services .service .img-of-service {
+        height: 400px;
+    }
+
+    .full-list-services .service p,
+    .full-list-services .service p strong {
+        font-size: 1.8rem;
+        line-height: 175%;
+    }
+
+    section.full-list-services>div:nth-child(2)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/ogrodnik-zakladanie-ogrodu.jpg);
+    }
+
+    section.full-list-services>div:nth-child(3)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/ogrodnik-pielegnacja-ogrodu.jpg);
+    }
+
+    section.full-list-services>div:nth-child(4)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/zraszacz-systemy-nawodnien.jpg)
+    }
+
+    section.full-list-services>div:nth-child(5)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/aranzacja-zieleni.jpg);
+    }
+
+    section.full-list-services>div:nth-child(6)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/outsourcing-grafika.jpg);
+    }
+
+    section.full-list-services>div:nth-child(7)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/oprysk-ogrodu.jpg);
+    }
+
+    section.full-list-services>div:nth-child(8)>div>img {
+        content: url(./images/mobile_horizontal/services_main_page/pracownicy-budowlani.jpg);
+    }
+
+    .full-list-services .service button {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+
 
 }
 
