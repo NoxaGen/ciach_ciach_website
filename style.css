@@ -741,6 +741,127 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 }
 
+/* large tablets like iPadPro - only portrait, landscape tablets will be
+similiar look like for desktop   */
+
+@media (min-width: 1024px) and (orientation: portrait) {
+
+    .nav-bar {
+        height: 110px;
+    }
+
+    .nav-bar .logo,
+    .nav-bar .logo2,
+    .nav-bar .hamburger {
+        width: 110px;
+        height: 110px;
+    }
+
+    .nav-bar .hamburger i {
+        font-size: 4rem;
+    }
+
+    .introduction {
+        height: 100vh;
+        background-image: url(./images/tablets_portrait/backgrounds/drewniany_dom_background_large_tablet_portrait.jpg);
+    }
+
+    .introduction h1 {
+        font-size: 6rem;
+        text-shadow: 5px 5px 5px var(--dark-grey-color);
+        padding: 10%;
+    }
+
+    .introduction p {
+        font-size: 3.5rem;
+        padding: 50px;
+        text-shadow: 5px 5px 5px var(--dark-grey-color);
+    }
+
+    .introduction button {
+        font-size: 2.7rem;
+        height: 80px;
+    }
+
+
+    .what-we-do h2 {
+        font-size: 6.5rem;
+    }
+
+    .what-we-do p {
+        font-size: 3rem;
+    }
+
+    .what-we-do .slider {
+        height: 800px;
+    }
+
+    .what-we-do .description ul li,
+    .what-we-do .description p {
+        font-size: 3rem;
+        padding: 10px;
+    }
+
+    .full-list-services h2 {
+        font-size: 4rem;
+    }
+
+    .full-list-services .service .img-of-service {
+        height: 550px;
+    }
+
+    .full-list-services .service h3 {
+        font-size: 4rem;
+    }
+
+    .full-list-services .service h3,
+    .full-list-services .service p,
+    .full-list-services .service p strong {
+        font-size: 3rem;
+    }
+
+    .full-list-services button {
+        font-size: 3rem;
+        height: 70px;
+    }
+
+    .opinions .opinion {
+        height: 750px;
+    }
+
+    .opinions p {
+        font-size: 2.6rem;
+    }
+
+    .opinion .white-box p {
+        font-size: 2.2rem;
+        padding: 20px;
+    }
+
+    .opinion .white-box {
+        height: 80px;
+    }
+
+    footer h5,
+    footer span {
+        font-size: 1.8rem;
+    }
+
+    footer .logo-footer {
+        width: 180px;
+        height: 180px;
+    }
+
+    footer ul li {
+        font-size: 1.5rem;
+    }
+
+    footer .rights p,
+    footer .rights a {
+        font-size: 1.5rem;
+    }
+}
+
 /* animations */
 
 @keyframes arrow {
