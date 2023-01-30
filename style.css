@@ -137,7 +137,9 @@ html {
 }
 
 .what-we-do {
-    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: var(--background-color-2);
     width: 100vw;
     font-family: var(--title-font);
@@ -146,11 +148,9 @@ html {
 }
 
 .what-we-do .slider {
-    position: relative;
+
     margin: 6vw 0px;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
+
     height: 400px;
     width: 88%;
     border: none;
@@ -601,6 +601,20 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .introduction button span i {
         font-size: 4rem;
+    }
+
+    .what-we-do {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .what-we-do .slider {
+
+        width: 45%;
+    }
+
+    .what-we-do .description {
+        width: 45%;
     }
 
 }
