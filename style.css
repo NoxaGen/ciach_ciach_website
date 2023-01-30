@@ -686,8 +686,37 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         margin-bottom: 60px;
     }
 
+    .opinions p {
+        padding: 0px 7.5vw;
+        font-size: 1.8rem;
+        line-height: 175%;
+    }
 
+    .opinions h2 {
+        font-size: 4rem;
+    }
 
+    .opinions .opinion {
+        height: 500px;
+    }
+
+    section.opinions>div:nth-child(4) {
+        background-image: url(./images/mobile_horizontal/opinions/zraszacz-podlewa-ogrod.jpg);
+    }
+
+    section.opinions>div:nth-child(5) {
+        background-image: url(./images/mobile_horizontal/opinions/piekny-ogrod-klientki.jpg);
+    }
+
+    section.opinions>div:nth-child(6) {
+        background-image: url(./images/mobile_horizontal/opinions/fontanna-w-ogrodzie.jpg);
+    }
+
+    .main-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 /* animations */
