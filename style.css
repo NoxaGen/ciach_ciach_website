@@ -44,11 +44,10 @@ html {
     background-color: var(--background-color)
 }
 
-.nav-bar .logo1,
-.nav-bar .logo2 {
-    height: 100%;
-    width: 30%;
+.nav-bar .logo {
+    width: 70px;
 }
+
 
 .nav-bar .logo img {
     height: 100%;
@@ -201,6 +200,7 @@ html {
 
 .what-we-do .short-list ul {
     margin: 20px 8vw 20px 12vw;
+    padding-bottom: 30px;
 
 }
 
@@ -516,7 +516,7 @@ footer .rights a {
 
 }
 
-/* quick medias for bigger phones screens */
+/* bigger phones screens */
 
 @media (min-width: 375px) {
     .introduction h1 {
@@ -548,6 +548,11 @@ footer .rights a {
         flex-wrap: wrap;
     }
 }
+
+/* mobile look of the main-page is completed
+testes on the phone models: iPhoneSE, iPhone 5/6/7/8 + iPhone X */
+
+
 
 /* animations */
 
