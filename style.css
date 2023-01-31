@@ -553,7 +553,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
 /* tablets portrait - tested on iPad 768x1024*/
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (orientation: portrait) {
     .nav-bar {
         height: 95px;
     }
