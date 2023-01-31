@@ -45,6 +45,11 @@ html {
     background-color: var(--background-color)
 }
 
+/* this elements will be only visible on desktop+ */
+.nav-bar .desktop-menu {
+    display: none;
+}
+
 .nav-bar .logo {
     width: 70px;
 }
