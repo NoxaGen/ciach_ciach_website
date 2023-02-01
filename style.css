@@ -581,6 +581,7 @@ footer .rights a {
 /* bigger phones screens portrait*/
 
 @media (min-width: 375px) and (orientation: portrait) {
+
     .introduction h1 {
         font-size: 3rem;
     }
@@ -806,8 +807,37 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 }
 
-/* large tablets like iPadPro - only portrait,
-landscape tablets will be similiar look like for desktop  */
+/* small and avarage tablets like iPad and iPad mini*/
+
+@media (min-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+    .introduction {
+        height: 100vh;
+    }
+
+    .introduction {
+        background-image: url(./images/backgrounds_introduction/ogrod_noca_tablets_l_small_avg.jpg);
+    }
+
+    .introduction h1 {
+        font-size: 4rem;
+    }
+
+    .introduction p {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .introduction button {
+        width: 40%;
+        height: 50px;
+    }
+
+    .introduction button span i {
+        font-size: 3rem;
+    }
+}
+
+/* large tablets like iPadPro - only portrait */
 
 @media (min-width: 1024px) and (orientation: portrait) {
 
@@ -847,7 +877,6 @@ landscape tablets will be similiar look like for desktop  */
         font-size: 2.7rem;
         height: 80px;
     }
-
 
     .what-we-do h2 {
         font-size: 6.5rem;
