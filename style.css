@@ -23,7 +23,7 @@
 
 html {
     width: 100vw;
-
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -83,14 +83,16 @@ html {
     justify-content: space-around;
     width: 100%;
     height: 90vh;
-    background-image: url(./images/backgrounds/drewniany-dom-ogrod-mobile-small-portrait.jpg);
+    background-image: url(./images/backgrounds_introduction/ogrod_noca_mobile_p.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
 .introduction h1 {
     font-family: var(--title-font);
     color: var(--background-color);
+    text-shadow: var(--shadow-text-on-bigger-screens);
     font-size: 2.3rem;
     padding: 10px 20px;
     letter-spacing: 2px;
@@ -102,6 +104,7 @@ html {
 .introduction p {
     font-family: var(--title-font);
     color: var(--background-color);
+    text-shadow: var(--shadow-text-on-bigger-screens);
     padding: 10px 20px 10px 20px;
     letter-spacing: 1.5px;
     line-height: 150%;
@@ -417,8 +420,8 @@ footer .rights a {
 @media (orientation: landscape) {
 
     .introduction {
-        height: 600px;
-        background-image: url(./images/mobile_horizontal/backgrounds/background_dom_ogrod.jpg);
+        height: 110vh;
+        background-image: url(./images//backgrounds_introduction/ogrod_noca_mobile_l.jpg);
     }
 
     .introduction h1 {
@@ -521,9 +524,63 @@ footer .rights a {
 
 }
 
-/* bigger phones screens */
+/* bigger phones screen landscapes */
 
-@media (min-width: 375px) {
+@media (min-width: 667px) and (orientation: landscape) {
+
+    .introduction {
+        height: 120vh;
+    }
+
+    .introduction h1 {
+        font-size: 3rem;
+    }
+
+    .introduction p {
+        font-size: 2rem;
+    }
+
+    .introduction button {
+        width: 300px;
+    }
+
+    .introduction button {
+        font-size: 1.7rem;
+    }
+
+    .what-we-do {
+        flex-direction: row-reverse;
+        padding: 0px 5vw;
+    }
+
+    .description h2 {
+        padding-left: 10px;
+        margin: 0px;
+    }
+
+    .what-we-do .small-title span {
+        width: 30%;
+        padding-left: 10px;
+        margin: 0px;
+    }
+
+    .what-we-do .short-list ul {
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .what-we-do .description {
+        width: 50%;
+    }
+
+    .what-we-do .description .slider {
+        width: 50%;
+    }
+}
+
+/* bigger phones screens portrait*/
+
+@media (min-width: 375px) and (orientation: portrait) {
     .introduction h1 {
         font-size: 3rem;
     }
@@ -582,7 +639,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .introduction {
-        background-image: url(./images/tablets_landscape/drewniany_dom_ogrod_backgroundv2_dark.jpg);
+        background-image: url(./images/backgrounds_introduction/ogrod_noca_tablets_p.jpg);
         height: 110vh;
     }
 
@@ -729,10 +786,12 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 }
 
+/* tablets portrait  */
+
 @media (min-width: 768px) and (orientation: portrait) {
     .introduction {
         height: 100vh;
-        background-image: url(./images/tablets_portrait/backgrounds/drewniany_dom_ogrod_background_v2_dark.jpg);
+        background-image: url(./images/backgrounds_introduction/ogrod_noca_tablets_p.jpg);
     }
 
     .introduction h1 {
@@ -769,7 +828,7 @@ landscape tablets will be similiar look like for desktop  */
 
     .introduction {
         height: 100vh;
-        background-image: url(./images/tablets_portrait/backgrounds/drewniny_dom_ogrod_tablet_big_higher_quality.jpg);
+        background-image: url(./images/backgrounds_introduction/ogrod_noca_tablets_p_big.jpg);
     }
 
     .introduction h1 {
@@ -869,7 +928,7 @@ landscape tablets will be similiar look like for desktop  */
 }
 
 /* small desktops and landscape tablets */
-@media (min-width: 992px) and (min-height: 810px) {
+@media (min-width: 992px) and (min-height: 810px) and (orientation: landscape) {
 
     .hamburger,
     .logo2 {
@@ -915,7 +974,7 @@ landscape tablets will be similiar look like for desktop  */
     .introduction {
         justify-content: flex-start;
         height: calc(100vh - 70px);
-        background-image: url(./images/desktop/test.jpg);
+        background-image: url(./images/new_backgrounds_main/ogrod_w_nocy_desktop_small_and_tablets_landscape.jpg);
         background-position: bottom 0%;
     }
 
