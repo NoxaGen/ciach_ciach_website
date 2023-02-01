@@ -963,6 +963,10 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 /* small desktops and landscape tablets */
 @media (min-width: 992px) and (min-height: 810px) and (orientation: landscape) {
 
+    .nav-bar {
+        position: relative;
+    }
+
     .hamburger,
     .logo2 {
         display: none;
@@ -1006,6 +1010,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .introduction {
+        margin-top: 0px;
         justify-content: flex-start;
         height: calc(100vh - 70px);
         background-image: url(./images/backgrounds_introduction/ogrod_noca_desktop_small_bright.jpg);
@@ -1054,27 +1059,44 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         width: 64%;
     }
 
+    .wrapper {
+        background-color: var(--background-color-2);
+    }
+
+    .full-list-services {
+        background-color: var(--background-color-2);
+    }
+
     .full-list-services .small-title-2 {
-        display: flex;
+        position: relative;
+        height: 30px;
+        width: 100vw;
+        background-color: var(--background-color-2);
     }
 
     .full-list-services h2 {
-        width: auto;
+        position: absolute;
         font-size: 3rem;
-        padding-left: 5vw;
-
+        display: block;
+        left: 5vw;
+        top: -100%;
+        z-index: 2;
+        padding-right: 20px;
+        background-color: var(--background-color-2);
     }
 
     .full-list-services span {
+        position: absolute;
+        background-color: var(--background-color-2);
+        z-index: 1;
         display: block;
-        border-bottom: 1px black solid;
-        width: 70%;
-        padding-right: 5px;
-        transform: translateY(-50%);
-        margin-left: 10px;
+        border-top: 1px solid var(--dark-grey-color);
+        width: 100%;
+        left: 5vw;
+        top: 50%;
+        height: 30px;
+        transform: translateY(5px);
     }
-
-
 
 }
 
