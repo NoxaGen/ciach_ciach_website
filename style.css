@@ -227,6 +227,10 @@ html {
     color: var(--dark-grey-color);
 }
 
+.full-list-services span {
+    display: none;
+}
+
 .full-list-services h2 {
     font-size: 2rem;
     text-align: center;
@@ -973,6 +977,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     .nav-bar {
         height: 85px;
         padding: 0px 5%;
+        z-index: 6;
     }
 
     .nav-bar .desktop-menu {
@@ -1003,7 +1008,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     .introduction {
         justify-content: flex-start;
         height: calc(100vh - 70px);
-        background-image: url(./images/new_backgrounds_main/ogrod_w_nocy_desktop_small_and_tablets_landscape.jpg);
+        background-image: url(./images/backgrounds_introduction/ogrod_noca_desktop_small_bright.jpg);
         background-position: bottom 0%;
     }
 
@@ -1015,9 +1020,10 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .introduction p {
         padding: 0px 10%;
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding-bottom: 5%;
         text-shadow: var(--shadow-text-on-bigger-screens);
+        margin-top: 100px;
     }
 
     .introduction button {
@@ -1025,6 +1031,50 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         font-size: 2rem;
         height: 55px;
     }
+
+    .introduction button span i {
+        font-size: 3rem;
+    }
+
+    .what-we-do {
+        margin-bottom: 5px;
+    }
+
+    .what-we-do .description h2 {
+        font-size: 5rem;
+    }
+
+    .what-we-do .slider {
+        width: 36%;
+        transform: translateY(-120px);
+        z-index: 5;
+    }
+
+    .what-we-do .description {
+        width: 64%;
+    }
+
+    .full-list-services .small-title-2 {
+        display: flex;
+    }
+
+    .full-list-services h2 {
+        width: auto;
+        font-size: 3rem;
+        padding-left: 5vw;
+
+    }
+
+    .full-list-services span {
+        display: block;
+        border-bottom: 1px black solid;
+        width: 70%;
+        padding-right: 5px;
+        transform: translateY(-50%);
+        margin-left: 10px;
+    }
+
+
 
 }
 
