@@ -1098,8 +1098,84 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         transform: translateY(5px);
     }
 
-}
+    .services-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
+    .services-container .service {
+        width: 32%;
+        background-color: var(--background-color);
+        height: 730px;
+        margin-top: 5px;
+    }
+
+    .full-list-services .service h3,
+    .full-list-services .service p {
+        margin: 0vw;
+        padding: 15px;
+        font-weight: 400;
+    }
+
+    .full-list-services .service p,
+    .full-list-services .service p strong {
+        font-size: 1.4rem;
+    }
+
+    .full-list-services .service h3 {
+        padding: 1px 15px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .full-list-services .service .img-of-service {
+        width: 300px;
+        height: 220px;
+    }
+
+    .full-list-services>div.services-container>div:nth-child(1)>div>img {
+        content: url(./images/desktop/desktop_services/ogrodnik-zakladanie-ogrodu.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(2)>div>img {
+        content: url(./images/desktop/desktop_services/ogrodnik-pielegnacja-ogrodu.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(3)>div>img {
+        content: url(./images/desktop/desktop_services/zraszacz-systemy-nawodnien.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(4)>div>img {
+        content: url(./images/desktop/desktop_services/aranzacja-zieleni.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(5)>div>img {
+        content: url(./images/desktop/desktop_services/outsourcing-grafika.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(6)>div>img {
+        content: url(./images/desktop/desktop_services/oprysk-ogrodu.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(7)>div>img {
+        content: url(./images/desktop/desktop_services/pracownicy-budowlani.jpg);
+    }
+
+    .full-list-services .service button {
+        margin-top: auto;
+        width: 60%;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    body>div>.full-list-services>div.services-container>div:nth-child(7) {
+
+        height: 800px;
+    }
+}
 
 
 /* animations */
