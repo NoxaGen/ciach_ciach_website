@@ -14,7 +14,7 @@
     --text-font: 'Open+Sans', 'Arial';
     --green-lighter: rgb(105, 152, 61);
     --green-darker: rgb(75 107 43);
-    --shadow: 3px 3px 10px 10px rgba(104, 104, 104, 0.295);
+    --shadow: 3px 2px 5px 5px rgba(104, 104, 104, 0.295);
     --footer-background: rgb(8, 51, 108);
     --footer-title: rgb(21, 130, 246);
     --footer-signature-background: rgb(18, 33, 52);
@@ -351,6 +351,7 @@ section.opinions>div:nth-child(5) {
 
 footer {
     display: flex;
+    position: relative;
     font-family: var(--title-font);
     color: var(--background-color);
     flex-direction: column;
@@ -850,6 +851,10 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
 @media (min-width: 1024px) and (orientation: portrait) {
 
+    body {
+        background-color: var(--background-color-2);
+    }
+
     .nav-bar {
         height: 110px;
     }
@@ -1178,11 +1183,14 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .opinions {
         background-color: var(--background-color);
+        overflow: hidden;
+
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
+
     }
 
     .opinions p,
@@ -1197,25 +1205,67 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .opinions h2 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .opinions .small-title-3 {
         width: 66%;
         height: 280px;
+        margin-bottom: 30px;
     }
 
     .opinions .small-stats {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 33%;
         margin-top: 60px;
+        margin-bottom: 150px;
         height: 200px;
         border-left: 1px solid var(--dark-grey-color);
+        font-family: var(--title-font);
+    }
+
+    .opinions .small-stats span:nth-child(1) {
+        font-size: 6rem;
+        font-weight: 300;
+        color: var(--green-darker);
+    }
+
+    .opinions .small-stats span:nth-child(2) {
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
     }
 
     .opinions .opinion {
-        width: 32%;
+        width: 31%;
+        height: 600px;
+        margin: 0px;
+        margin-bottom: 50px;
+        border-radius: 1%;
+        box-shadow: var(--shadow);
     }
+
+
+    .opinions>div:nth-child(3) {
+        background-image: url(./images/desktop_opinions/podlewanie-ogrodu.jpg);
+    }
+
+    .opinions>div:nth-child(4) {
+        background-image: url(./images/desktop_opinions/piekny-ogrod.jpg);
+        transform: translateY(-100px);
+    }
+
+    .opinions>div:nth-child(5) {
+        background-image: url(./images/desktop_opinions/fontanna-przy-firmie.jpg);
+    }
+
+    .main-footer {
+        width: 90%;
+        justify-content: space-around;
+    }
+
 
 }
 
