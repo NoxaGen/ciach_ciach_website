@@ -291,6 +291,10 @@ html {
     color: var(--dark-grey-color);
 }
 
+.opinion .small-stats {
+    display: none;
+}
+
 .opinions p {
     padding: 0px 20px;
     font-size: 1.2rem;
@@ -308,15 +312,16 @@ html {
     background-repeat: no-repeat;
 }
 
-section.opinions>div:nth-child(4) {
+
+section.opinions>div:nth-child(3) {
     background-image: url(./images/opinions/podlewanie-ogrodu.jpg);
 }
 
-section.opinions>div:nth-child(5) {
+section.opinions>div:nth-child(4) {
     background-image: url(./images/opinions/piekny-ogrod.jpg);
 }
 
-section.opinions>div:nth-child(6) {
+section.opinions>div:nth-child(5) {
     background-image: url(./images/opinions/fontanna-w-ogrodzie.jpg);
 }
 
@@ -508,15 +513,15 @@ footer .rights a {
         padding: 30px;
     }
 
-    section.opinions>div:nth-child(4) {
+    section.opinions>div:nth-child(3) {
         background-image: url(./images/mobile_horizontal/opinions/zraszacz-podlewa-ogrod.jpg);
     }
 
-    section.opinions>div:nth-child(5) {
+    section.opinions>div:nth-child(4) {
         background-image: url(./images/mobile_horizontal/opinions/piekny-ogrod-klientki.jpg);
     }
 
-    section.opinions>div:nth-child(6) {
+    section.opinions>div:nth-child(5) {
         background-image: url(./images/mobile_horizontal/opinions/fontanna-w-ogrodzie.jpg);
     }
 
@@ -771,15 +776,15 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         height: 500px;
     }
 
-    section.opinions>div:nth-child(4) {
+    section.opinions>div:nth-child(3) {
         background-image: url(./images/mobile_horizontal/opinions/zraszacz-podlewa-ogrod.jpg);
     }
 
-    section.opinions>div:nth-child(5) {
+    section.opinions>div:nth-child(4) {
         background-image: url(./images/mobile_horizontal/opinions/piekny-ogrod-klientki.jpg);
     }
 
-    section.opinions>div:nth-child(6) {
+    section.opinions>div:nth-child(5) {
         background-image: url(./images/mobile_horizontal/opinions/fontanna-w-ogrodzie.jpg);
     }
 
@@ -1172,12 +1177,19 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .opinions {
-        background-color: var(--background-color)
+        background-color: var(--background-color);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .opinions p,
     .opinions h2 {
         padding-left: 5vw;
+        width: 100%;
+        margin: 0;
     }
 
     .opinions p {
@@ -1188,8 +1200,24 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         font-size: 3rem;
     }
 
-}
+    .opinions .small-title-3 {
+        width: 66%;
+        height: 280px;
+    }
 
+    .opinions .small-stats {
+        display: block;
+        width: 33%;
+        margin-top: 60px;
+        height: 200px;
+        border-left: 1px solid var(--dark-grey-color);
+    }
+
+    .opinions .opinion {
+        width: 32%;
+    }
+
+}
 
 /* animations */
 
