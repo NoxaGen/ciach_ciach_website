@@ -1247,7 +1247,6 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         box-shadow: var(--shadow);
     }
 
-
     .opinions>div:nth-child(3) {
         background-image: url(./images/desktop_opinions/podlewanie-ogrodu.jpg);
     }
@@ -1261,11 +1260,20 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         background-image: url(./images/desktop_opinions/fontanna-przy-firmie.jpg);
     }
 
+    .opinions .opinion p {
+        font-size: 1.3rem;
+        padding: 4px;
+    }
+
+    .opinions .opinion .white-box {
+        padding: 4px;
+        height: 170px;
+    }
+
     .main-footer {
         width: 90%;
         justify-content: space-around;
     }
-
 
 }
 
