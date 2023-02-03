@@ -1091,7 +1091,6 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .full-list-services .service {
-
         border-radius: 1%;
     }
 
@@ -1125,6 +1124,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         top: 50%;
         height: 30px;
         transform: translateY(5px);
+
     }
 
     .services-container {
@@ -1203,13 +1203,11 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     .opinions {
         background-color: var(--background-color);
         overflow: hidden;
-
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-
     }
 
     .opinions p,
@@ -1240,7 +1238,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         align-items: center;
         width: 33%;
         margin-top: 60px;
-        margin-bottom: 150px;
+        margin-bottom: 165px;
         height: 200px;
         border-left: 1px solid var(--dark-grey-color);
         font-family: var(--title-font);
@@ -1261,7 +1259,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         width: 31%;
         height: 600px;
         margin: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         border-radius: 1%;
         box-shadow: var(--shadow);
     }
@@ -1277,6 +1275,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .opinions>div:nth-child(5) {
         background-image: url(./images/desktop_opinions/fontanna-przy-firmie.jpg);
+        transform: translateY(35px)
     }
 
     .opinions .opinion p {
@@ -1305,6 +1304,15 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .introduction h1 {
         font-size: 5rem;
+        padding-top: 50px;
+    }
+
+    .introduction p {
+        padding-top: 50px;
+    }
+
+    .full-list-services .small-title-2 {
+        width: 91.5%;
     }
 
     .what-we-do .description h2 {
@@ -1324,11 +1332,71 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .full-list-services .service {
-
         padding-left: 1%;
         padding-right: 1%;
     }
 
+}
+
+/* laptops and screens above 1400px */
+
+@media (min-width: 1400px) and (min-height: 800px) and (orientation: landscape) {
+
+    .nav-bar {
+        padding: 0px 120px;
+    }
+
+    .introduction {
+        height: 85vh;
+        background-image: url(./images/backgrounds_introduction/ogrod_noca_desktop_1400_bright_fixed.jpg);
+    }
+
+    .introduction h1 {
+        font-size: 5.5rem;
+    }
+
+    .introduction p {
+        font-size: 2.2rem;
+    }
+
+    .what-we-do,
+    .full-list-services,
+    .opinions {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+}
+
+/* laptops and screens like tv above 1920px */
+
+@media (min-width: 1920px) {
+
+    .nav-bar {
+        padding: 0px 300px;
+    }
+
+    .introduction {
+        height: 72vh;
+        background-image: url(./images/backgrounds_introduction/ogrod_noca_desktop_1920_bright_fixed.jpg);
+    }
+
+    .what-we-do .slider {
+        height: 850px;
+        transform: translateY(-180px);
+    }
+
+    .what-we-do,
+    .full-list-services,
+    .opinions {
+        padding-left: 330px;
+        padding-right: 330px;
+    }
+
+    footer .main-footer {
+        padding-left: 275px;
+        padding-right: 275px;
+    }
 }
 
 /* animations */
