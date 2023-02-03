@@ -982,8 +982,9 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 }
 
+/* and (min-height: 800px) */
 /* small desktops and landscape tablets */
-@media (min-width: 992px) and (min-height: 800px) and (orientation: landscape) {
+@media (min-width: 992px) and (orientation: landscape) {
 
     .nav-bar {
         position: relative;
@@ -1295,9 +1296,10 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
 }
 
+/* and (min-height: 800px) */
 /* larger dekstops above 1200px */
 
-@media (min-width: 1200px) and (min-height: 800px) and (orientation: landscape) {
+@media (min-width: 1200px) and (orientation: landscape) {
     .introduction {
         background-image: url(./images/backgrounds_introduction/ogrod_noca_desktop_1200_bright.jpg);
     }
@@ -1338,9 +1340,11 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
 }
 
+/* and (min-height: 800px) */
+
 /* laptops and screens above 1400px */
 
-@media (min-width: 1400px) and (min-height: 800px) and (orientation: landscape) {
+@media (min-width: 1400px) and (orientation: landscape) {
 
     .nav-bar {
         padding: 0px 120px;
