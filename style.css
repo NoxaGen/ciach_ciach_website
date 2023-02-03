@@ -130,6 +130,11 @@ html {
     cursor: pointer;
 }
 
+.introduction button:hover,
+.service button:hover {
+    background-color: var(--green-lighter);
+}
+
 .introduction button span {
     position: absolute;
     display: block;
@@ -243,6 +248,13 @@ html {
     width: 100vw;
     margin: 40px 0px;
     background-color: var(--background-color-2);
+    border-radius: 1%;
+    transition: 0.3s;
+}
+
+.full-list-services .service:hover {
+    box-shadow: 0px 0px 0px 1px var(--green-lighter);
+    cursor: pointer;
 }
 
 .full-list-services .service .img-of-service {
@@ -971,7 +983,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 }
 
 /* small desktops and landscape tablets */
-@media (min-width: 992px) and (min-height: 810px) and (orientation: landscape) {
+@media (min-width: 992px) and (min-height: 800px) and (orientation: landscape) {
 
     .nav-bar {
         position: relative;
@@ -998,6 +1010,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         width: 45%;
         font-family: var(--title-font);
         display: block;
+        cursor: pointer;
     }
 
     .nav-bar .desktop-menu ul {
@@ -1016,7 +1029,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .nav-bar .desktop-menu ul li:hover {
-        border-bottom: 3px var(--dark-grey-color) solid;
+        border-bottom: 3px var(--green-darker) solid;
     }
 
     .introduction {
@@ -1077,11 +1090,17 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         background-color: var(--background-color-2);
     }
 
+    .full-list-services .service {
+
+        border-radius: 1%;
+    }
+
     .full-list-services .small-title-2 {
         position: relative;
         height: 30px;
         width: 100vw;
         background-color: var(--background-color-2);
+        margin-bottom: 50px;
     }
 
     .full-list-services h2 {
@@ -1273,6 +1292,41 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     .main-footer {
         width: 90%;
         justify-content: space-around;
+    }
+
+}
+
+/* larger dekstops above 1200px */
+
+@media (min-width: 1200px) and (min-height: 800px) and (orientation: landscape) {
+    .introduction {
+        background-image: url(./images/backgrounds_introduction/ogrod_noca_desktop_1200_bright.jpg);
+    }
+
+    .introduction h1 {
+        font-size: 5rem;
+    }
+
+    .what-we-do .description h2 {
+        font-size: 6rem;
+    }
+
+    .what-we-do .description p {
+        font-size: 1.8rem;
+    }
+
+    .what-we-do .description ul li {
+        font-size: 2rem;
+    }
+
+    .full-list-services .service .img-of-service {
+        width: 90%;
+    }
+
+    .full-list-services .service {
+
+        padding-left: 1%;
+        padding-right: 1%;
     }
 
 }
