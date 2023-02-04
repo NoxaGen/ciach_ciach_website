@@ -741,32 +741,32 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         line-height: 175%;
     }
 
-    section.full-list-services>div:nth-child(2)>div>img {
-        content: url(./images/mobile_horizontal/services_main_page/ogrodnik-zakladanie-ogrodu.jpg);
+    section.full-list-services>div.services-container>div:nth-child(1)>div>img {
+        content: url(./images/services_tablet_portrait/ogrodnik-zakladanie-ogrodu.jpg);
     }
 
-    section.full-list-services>div:nth-child(3)>div>img {
-        content: url(./images/mobile_horizontal/services_main_page/ogrodnik-pielegnacja-ogrodu.jpg);
+    section.full-list-services>div.services-container>div:nth-child(2)>div>img {
+        content: url(./images/services_tablet_portrait/ogrodnik-pielegnacja-ogrodu.jpg);
     }
 
-    section.full-list-services>div:nth-child(4)>div>img {
-        content: url(./images/mobile_horizontal/services_main_page/zraszacz-systemy-nawodnien.jpg)
+    section.full-list-services>div.services-container>div:nth-child(3)>div>img {
+        content: url(./images/services_tablet_portrait/systemy-nawodnien-zraszacz.jpg);
     }
 
-    section.full-list-services>div:nth-child(5)>div>img {
-        content: url(./images/mobile_horizontal/services_main_page/aranzacja-zieleni.jpg);
+    section.full-list-services>div.services-container>div:nth-child(4)>div>img {
+        content: url(./images/services_tablet_portrait/aranzacja-zieleni.jpg);
     }
 
-    section.full-list-services>div:nth-child(6)>div>img {
-        content: url(./images/mobile_horizontal/services_main_page/outsourcing-grafika.jpg);
+    section.full-list-services>div.services-container>div:nth-child(5)>div>img {
+        content: url(./images/services_tablet_portrait/outsourcing-grafika.jpg);
     }
 
-    section.full-list-services>div:nth-child(7)>div>img {
-        content: url(./images/mobile_horizontal/services_main_page/oprysk-ogrodu.jpg);
+    section.full-list-services>div.services-container>div:nth-child(6)>div>img {
+        content: url(./images/services_tablet_portrait/oprysk-ogrodu.jpg);
     }
 
-    section.full-list-services>div:nth-child(8)>div>img {
-        content: url(./images/mobile_horizontal/services_main_page/pracownicy-budowlani.jpg);
+    section.full-list-services>div.services-container>div:nth-child(7)>div>img {
+        content: url(./images/services_tablet_portrait/pracownicy-budowlani.jpg);
     }
 
     .full-list-services .service button {
