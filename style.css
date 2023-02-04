@@ -1396,7 +1396,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .what-we-do .slider {
         height: 850px;
-        transform: translateY(-180px);
+        transform: translateY(-200px);
     }
 
     .what-we-do .description h2 {
