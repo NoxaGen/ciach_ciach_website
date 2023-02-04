@@ -1400,7 +1400,8 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .what-we-do .description h2 {
-        font-size: 7rem;
+        font-size: 8rem;
+        transform: translateY(-50px);
     }
 
     .what-we-do,
