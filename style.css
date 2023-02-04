@@ -1125,7 +1125,6 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         top: 50%;
         height: 30px;
         transform: translateY(5px);
-
     }
 
     .services-container {
@@ -1302,15 +1301,17 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 @media (min-width: 1200px) and (orientation: landscape) {
     .introduction {
         background-image: url(./images/backgrounds_introduction/ogrod_noca_desktop_1200_bright.jpg);
+        justify-content: center;
     }
 
     .introduction h1 {
         font-size: 5rem;
-        padding-top: 50px;
+        padding: 30px 50px;
     }
 
     .introduction p {
-        padding-top: 50px;
+        margin: 0px;
+        padding: 50px 50px 100px;
     }
 
     .full-list-services .small-title-2 {
