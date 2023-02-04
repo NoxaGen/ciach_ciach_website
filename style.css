@@ -1306,12 +1306,12 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .introduction h1 {
         font-size: 5rem;
-        padding: 30px 50px;
+        padding: 50px;
     }
 
     .introduction p {
         margin: 0px;
-        padding: 50px 50px 100px;
+        padding: 50px;
     }
 
     .full-list-services .small-title-2 {
