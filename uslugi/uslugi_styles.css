@@ -26,7 +26,75 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    font-size: 10px;
+}
+
 .wrapper {
     width: 100%;
     overflow-x: hidden;
+    font-family: var(--title-font);
+}
+
+.service-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    background-image: url(./images/subpages_backgrounds/mogile_portrait/Zakladanie-ogrodu-klient.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.service-intro span {
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.service-intro h2 {
+    z-index: 3;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    color: var(--background-color);
+}
+
+.description-of-service p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    padding: 20px;
+    line-height: 150%;
+}
+
+.photos-of-service {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.photos-of-service img {
+    width: calc(100% - 40px);
+    border-radius: 2%;
+    margin: 10px 0px;
+    box-shadow: var(--shadow);
+}
+
+.shortcut-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
