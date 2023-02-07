@@ -71,8 +71,8 @@ body {
 
 .description-of-service p {
     margin-top: 20px;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
+    font-size: 1.4rem;
+    letter-spacing: 1.2px;
     padding: 20px;
     line-height: 150%;
 }
@@ -97,4 +97,47 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shortcut-list h3 {
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.shortcut-list ul li {
+    list-style: none;
+
+    font-size: 1.4rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .call-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contact .call-me span {
+    font-size: 1.4rem;
+}
+
+.contact p {
+    font-size: 1.6rem;
+    padding: 20px;
+}
+
+.contact p i {
+    font-size: 2rem;
+    padding-right: 5px;
+    color: var(--green-darker);
 }
