@@ -44,12 +44,41 @@ body {
     position: relative;
     width: 100%;
     height: 55vh;
-    background-image: url(./images/subpages_backgrounds/mogile_portrait/Zakladanie-ogrodu-klient.jpg);
     background-position: center;
     background-size: cover;
     object-fit: contain;
     z-index: 1;
 }
+
+.zakladanie-ogrodow {
+    background-image: url(./images/subpages_backgrounds/mogile_portrait/Zakladanie-ogrodu-klient.jpg);
+}
+
+.systemy-nawodnien {
+    background-image: url(./images/subpages_backgrounds/mogile_portrait/Systemy-nawodnienia.jpg);
+}
+
+.obsluga-i-serwis {
+    background-image: url(./images/subpages_backgrounds/mogile_portrait/Serwis-ogrodu.jpg);
+}
+
+.opryski-chemiczne {
+    background-image: url(./images/subpages_backgrounds/mogile_portrait/Oprysk-chemiczny-ogrodu.jpg);
+}
+
+.uslugi-budowlane {
+    background-image: url(./images/subpages_backgrounds/mogile_portrait/Uslugi-Budowlane.jpg);
+}
+
+.outsourcing {
+    background-image: url(./images/subpages_backgrounds/mogile_portrait/Outsourcing-pracowniczy.jpg);
+}
+
+.aranzacja-zieleni {
+    background-image: url(./images/subpages_backgrounds/mogile_portrait/Aranzacja-ogrodu-instytucja.jpg);
+}
+
+
 
 .service-intro span {
     position: absolute;
@@ -104,10 +133,10 @@ body {
 .shortcut-list h3 {
     padding-bottom: 20px;
     font-size: 1.6rem;
+    text-align: center;
 }
 
 .shortcut-list ul li {
-    list-style: none;
 
     font-size: 1.4rem;
 }
