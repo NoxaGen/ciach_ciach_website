@@ -51,34 +51,32 @@ body {
 }
 
 .zakladanie-ogrodow {
-    background-image: url(./images/subpages_backgrounds/mogile_portrait/Zakladanie-ogrodu-klient.jpg);
+    background-image: url(./images/subpages_backgrounds/mobile_portrait/Zakladanie-ogrodu-klient.jpg);
 }
 
 .systemy-nawodnien {
-    background-image: url(./images/subpages_backgrounds/mogile_portrait/Systemy-nawodnienia.jpg);
+    background-image: url(./images/subpages_backgrounds/mobile_portrait/Systemy-nawodnienia.jpg);
 }
 
 .obsluga-i-serwis {
-    background-image: url(./images/subpages_backgrounds/mogile_portrait/Serwis-ogrodu.jpg);
+    background-image: url(./images/subpages_backgrounds/mobile_portrait/Serwis-ogrodu.jpg);
 }
 
 .opryski-chemiczne {
-    background-image: url(./images/subpages_backgrounds/mogile_portrait/Oprysk-chemiczny-ogrodu.jpg);
+    background-image: url(./images/subpages_backgrounds/mobile_portrait/Oprysk-chemiczny-ogrodu.jpg);
 }
 
 .uslugi-budowlane {
-    background-image: url(./images/subpages_backgrounds/mogile_portrait/Uslugi-Budowlane.jpg);
+    background-image: url(./images/subpages_backgrounds/mobile_portrait/Uslugi-Budowlane.jpg);
 }
 
 .outsourcing {
-    background-image: url(./images/subpages_backgrounds/mogile_portrait/Outsourcing-pracowniczy.jpg);
+    background-image: url(./images/subpages_backgrounds/mobile_portrait/Outsourcing-pracowniczy.jpg);
 }
 
 .aranzacja-zieleni {
     background-image: url(./images/subpages_backgrounds/mogile_portrait/Aranzacja-ogrodu-instytucja.jpg);
 }
-
-
 
 .service-intro span {
     position: absolute;
@@ -160,12 +158,75 @@ body {
 }
 
 .contact p {
-    font-size: 1.6rem;
-    padding: 20px;
+    font-size: 3rem;
+    padding: 20px 20px 40px 20px;
 }
 
 .contact p i {
-    font-size: 2rem;
+    font-size: 4rem;
     padding-right: 5px;
-    color: var(--green-darker);
+    color: var(--green-lighter);
+}
+
+@media (orientation: landscape) {
+    .service-intro {
+        height: calc(100vh - 70px);
+    }
+
+    .zakladanie-ogrodow {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Zakladanie-ogrodu-klient.jpg);
+    }
+
+    .systemy-nawodnien {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Systemy-nawodnienia.jpg);
+    }
+
+    .obsluga-i-serwis {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Serwis-ogrodu.jpg);
+    }
+
+    .opryski-chemiczne {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Oprysk-chemiczny-ogrodu.jpg);
+    }
+
+    .uslugi-budowlane {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Uslugi-Budowlane.jpg);
+    }
+
+    .outsourcing {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Outsourcing-pracowniczy.jpg);
+    }
+
+    .aranzacja-zieleni {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Aranzacja-ogrodu-instytucja.jpg);
+    }
+
+    .service-intro h2 {
+        font-size: 3.5rem;
+    }
+
+    .photos-of-service img {
+        width: 60%;
+        margin: 30px;
+    }
+
+    .photos-of-service img:nth-child(1) {
+        transform: translate(-10%);
+    }
+
+    .photos-of-service img:nth-child(3) {
+        transform: translate(10%);
+    }
+
+    .contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact .call-me {
+        flex-direction: row;
+    }
+
+
+
 }
