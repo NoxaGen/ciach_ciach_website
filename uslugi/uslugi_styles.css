@@ -158,19 +158,21 @@ body {
 }
 
 .contact p {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 20px 20px 40px 20px;
 }
 
 .contact p i {
-    font-size: 4rem;
+    font-size: 3.0rem;
     padding-right: 5px;
     color: var(--green-lighter);
 }
 
 @media (orientation: landscape) {
     .service-intro {
-        height: calc(100vh - 70px);
+        height: 105vh;
+        background-position: contain;
+        background-repeat: no-repeat;
     }
 
     .zakladanie-ogrodow {
@@ -205,17 +207,19 @@ body {
         font-size: 3.5rem;
     }
 
+    .photos-of-service {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .photos-of-service img {
-        width: 60%;
-        margin: 30px;
+        width: 45%;
+        margin: 10px;
     }
 
-    .photos-of-service img:nth-child(1) {
-        transform: translate(-10%);
-    }
-
-    .photos-of-service img:nth-child(3) {
-        transform: translate(10%);
+    .description-of-service p {
+        padding: 20px 40px;
+        font-size: 1.7rem;
     }
 
     .contact {
@@ -223,10 +227,14 @@ body {
         flex-wrap: wrap;
     }
 
-    .contact .call-me {
-        flex-direction: row;
+    .contact span {
+        width: 50%;
+        line-height: 130%;
+        letter-spacing: 1.3px;
     }
 
-
-
+    .contact .call-me {
+        flex-direction: row;
+        padding-bottom: 0px;
+    }
 }
