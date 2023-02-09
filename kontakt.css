@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+}
+
+:root {
+    --background-color: rgb(255, 255, 255);
+    --background-color-2: rgb(245, 245, 245);
+    --grey-color: rgb(96, 96, 96);
+    --dark-grey-color: rgb(23, 23, 23);
+    --title-font: 'Unbounded', 'Arial';
+    --text-font: 'Open+Sans', 'Arial';
+    --green-lighter: rgb(105, 152, 61);
+    --green-darker: rgb(75 107 43);
+    --shadow: 3px 2px 5px 5px rgba(104, 104, 104, 0.295);
+    --footer-background: rgb(8, 51, 108);
+    --footer-title: rgb(21, 130, 246);
+    --footer-signature-background: rgb(18, 33, 52);
+    --shadow-text-on-bigger-screens: 5px 5px 10px var(--dark-grey-color);
+}
+
+.service-intro {
+    background-image: url(./images/contact_images/ogrod_ziema_narzedzia_mobile_p.jpg);
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.contact-us div img {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.contact-us div p {
+    text-align: center;
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+.contact-us div a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.contact-us div a button {
+    font-size: 1.8rem;
+    padding: 3px 5px;
+    background-color: #3B5998;
+    color: rgb(255, 255, 255);
+    font-family: var(--title-font);
+    cursor: pointer;
+}
+
+.contact-us div a button:hover {
+    background-color: #597dcc;
+}
+
+
+.contact-us div:nth-child(1) {
+    border: solid 1px green;
+    border-radius: 1%;
+    padding: 10px;
+}
+
+.contact-us div:nth-child(2) {
+    border: solid 1px red;
+    border-radius: 1%;
+    padding: 10px;
+}
+
+.contact-us div:nth-child(3) {
+    border: solid 1px blue;
+    border-radius: 1%;
+    padding: 10px;
+}
+
+
+.contact-us div span {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10-px;
+    font-size: 1.2rem;
+}
+
+
+
+
+.contact-us img {
+    width: 100px;
+}
