@@ -89,10 +89,32 @@
 @media (min-width: 1200px) and (orientation: landscape) {
     .additional-info {
         padding-left: 60px;
-        padding-bottom: 60px;
+        padding-right: 60px;
     }
 }
 
-@media (min-width: 1400px) and (orientation: landscape) {}
+@media (min-width: 1400px) and (orientation: landscape) {
+    .additional-info {
+
+        padding-right: 120px;
+        padding-left: 120px;
+    }
+
+    .additional-info {
+        margin-top: 50px;
+    }
+
+    .small-stats span:nth-child(1) {
+        font-size: 10rem;
+
+    }
+
+    .small-stats span:nth-child(2) {
+        font-size: 2.2rem;
+        letter-spacing: 1.5px;
+    }
+
+
+}
 
 @media (min-width: 1920px) {}
