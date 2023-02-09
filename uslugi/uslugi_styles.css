@@ -151,6 +151,7 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    border-radius: 1%;
 }
 
 .contact .call-me span {
@@ -332,4 +333,76 @@ body {
         font-size: 3.7rem;
     }
 
+}
+
+/* tablets landscape and small desktops */
+
+@media (min-width: 992px) and (orientation: landscape) {
+
+    .zakladanie-ogrodow {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Zakladanie-ogrodu-klient.jpg);
+    }
+
+    .systemy-nawodnien {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Systemy-nawodnienia.jpg);
+    }
+
+    .obsluga-i-serwis {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Serwis-ogrodu.jpg);
+    }
+
+    .opryski-chemiczne {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Oprysk-chemiczny-ogrodu.jpg);
+    }
+
+    .uslugi-budowlane {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Uslugi-Budowlane.jpg);
+    }
+
+    .outsourcing {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Outsourcing-pracowniczy.jpg);
+    }
+
+    .aranzacja-zieleni {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Aranzacja-ogrodu-instytucja.jpg);
+    }
+
+    .service-intro {
+        margin-top: 0px;
+        height: 400px;
+    }
+
+    .service-intro h2 {
+        font-size: 5rem;
+    }
+
+    .description-of-service p {
+        font-size: 1.8rem;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .photos-of-service img {
+        width: 45%;
+    }
+
+    .shortcut-list h3 {
+        font-size: 2rem;
+    }
+
+    .shortcut-list ul li {
+        font-size: 1.8rem;
+    }
+
+    .contact .call-me span {
+        font-size: 1.6rem;
+    }
+
+    .contact p {
+        font-size: 2.8rem
+    }
+
+    .contact p i {
+        font-size: 3.2rem;
+    }
 }
