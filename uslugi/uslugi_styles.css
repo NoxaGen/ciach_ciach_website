@@ -169,6 +169,7 @@ body {
 }
 
 @media (orientation: landscape) {
+
     .service-intro {
         height: 105vh;
         background-position: contain;
@@ -237,4 +238,98 @@ body {
         flex-direction: row;
         padding-bottom: 0px;
     }
+}
+
+/* tablets portrait - tested on iPad 768x1024*/
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .service-intro {
+        height: 45vh;
+    }
+
+    .zakladanie-ogrodow {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Zakladanie-ogrodu-klient.jpg);
+    }
+
+    .systemy-nawodnien {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Systemy-nawodnienia.jpg);
+    }
+
+    .obsluga-i-serwis {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Serwis-ogrodu.jpg);
+    }
+
+    .opryski-chemiczne {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Oprysk-chemiczny-ogrodu.jpg);
+    }
+
+    .uslugi-budowlane {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Uslugi-Budowlane.jpg);
+    }
+
+    .outsourcing {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Outsourcing-pracowniczy.jpg);
+    }
+
+    .aranzacja-zieleni {
+        background-image: url(./images/subpages_backgrounds/mobile_landscape_tablet_p/Aranzacja-ogrodu-instytucja.jpg);
+    }
+
+    .service-intro h2 {
+        font-size: 5rem;
+    }
+
+    .description-of-service p {
+        font-size: 2.1rem;
+        padding: 30px;
+    }
+
+    .photos-of-service {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0px 10px;
+    }
+
+    .photos-of-service img {
+        width: 47%;
+        margin: 10px
+    }
+
+    .shortcut-list h3 {
+        font-size: 2.5rem;
+    }
+
+    .shortcut-list ul li {
+        font-size: 2rem;
+    }
+
+    .contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact .call-me {
+        flex-direction: row;
+        padding-bottom: 0px;
+    }
+
+    .contact .call-me span {
+        width: 50%;
+        line-height: 130%;
+        letter-spacing: 1.3px;
+        font-size: 1.8rem;
+    }
+
+    .contact .call-me img {
+        width: 350px;
+    }
+
+    .contact p {
+        font-size: 3.2rem;
+    }
+
+    .contact p i {
+        font-size: 3.7rem;
+    }
+
 }
