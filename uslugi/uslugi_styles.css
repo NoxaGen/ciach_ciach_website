@@ -509,7 +509,6 @@ body {
         background-image: url(./images/subpages_backgrounds/large_desktop/Aranzacja-ogrodu-instytucja.jpg);
     }
 
-
     .description-of-service,
     .photos-of-service {
         padding-left: 100px;
@@ -522,6 +521,52 @@ body {
 
     .shortcut-list ul li {
         font-size: 2rem;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .zakladanie-ogrodow {
+        background-image: url(./images/subpages_backgrounds/xl_desktop/Zakladanie-ogrodu-klient.jpg);
+    }
+
+    .systemy-nawodnien {
+        background-image: url(./images/subpages_backgrounds/xl_desktop/Systemy-nawodnienia.jpg);
+    }
+
+    .obsluga-i-serwis {
+        background-image: url(./images/subpages_backgrounds/xl_desktop/Serwis-ogrodu.jpg);
+    }
+
+    .opryski-chemiczne {
+        background-image: url(./images/subpages_backgrounds/xl_desktop/Oprysk-chemiczny-ogrodu.jpg);
+    }
+
+    .uslugi-budowlane {
+        background-image: url(./images/subpages_backgrounds/xl_desktop/Uslugi-Budowlane.jpg);
+    }
+
+    .outsourcing {
+        background-image: url(./images/subpages_backgrounds/xl_desktop/Outsourcing-pracowniczy.jpg);
+    }
+
+    .aranzacja-zieleni {
+        background-image: url(./images/subpages_backgrounds/xl_desktop/Aranzacja-ogrodu-instytucja.jpg);
+
+    }
+
+    .service-intro {
+        height: 500px;
+    }
+
+    .description-of-service {
+        padding: 20px 320px;
+    }
+
+    .photos-of-service {
+        padding-left: 300px;
+        padding-right: 300px;
+
     }
 
 
