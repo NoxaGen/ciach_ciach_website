@@ -1,0 +1,93 @@
+@media (orientation: landscape) {
+    .additional-info {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .additional-info .shortcut-list {
+        width: 50%;
+    }
+
+    .small-stats {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border-left: 1px solid var(--dark-grey-color);
+        font-family: var(--title-font);
+    }
+
+    .small-stats span:nth-child(1) {
+        font-size: 6rem;
+        font-weight: 300;
+        color: var(--green-darker);
+    }
+
+    .small-stats span:nth-child(2) {
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .additional-info {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .additional-info .shortcut-list {
+        width: 50%;
+    }
+
+    .small-stats {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border-left: 1px solid var(--dark-grey-color);
+        font-family: var(--title-font);
+    }
+
+    .small-stats span:nth-child(1) {
+        font-size: 8rem;
+        font-weight: 300;
+        color: var(--green-darker);
+    }
+
+    .small-stats span:nth-child(2) {
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+    .additional-info {
+        margin-top: 50px;
+    }
+
+    .small-stats span:nth-child(1) {
+        font-size: 8rem;
+        font-weight: 300;
+        color: var(--green-darker);
+    }
+
+    .small-stats span:nth-child(2) {
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {}
+
+@media (min-width: 1400px) and (orientation: landscape) {}
+
+@media (min-width: 1920px) {}
