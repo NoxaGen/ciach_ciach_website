@@ -93,6 +93,7 @@ body {
     font-size: 3rem;
     text-align: center;
     width: 100%;
+    padding: 20px;
     color: var(--background-color);
 }
 
@@ -126,6 +127,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.small-stats {
+    display: none;
 }
 
 .shortcut-list h3 {
@@ -404,5 +409,73 @@ body {
 
     .contact p i {
         font-size: 3.2rem;
+    }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+
+    .zakladanie-ogrodow {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Zakladanie-ogrodu-klient.jpg);
+    }
+
+    .systemy-nawodnien {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Systemy-nawodnienia.jpg);
+    }
+
+    .obsluga-i-serwis {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Serwis-ogrodu.jpg);
+    }
+
+    .opryski-chemiczne {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Oprysk-chemiczny-ogrodu.jpg);
+    }
+
+    .uslugi-budowlane {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Uslugi-Budowlane.jpg);
+    }
+
+    .outsourcing {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Outsourcing-pracowniczy.jpg);
+    }
+
+    .aranzacja-zieleni {
+        background-image: url(./images/subpages_backgrounds/mid_desktop/Aranzacja-ogrodu-instytucja.jpg);
+    }
+
+    .description-of-service {
+        padding: 20px 50px;
+        line-height: 150%;
+        letter-spacing: 2px;
+    }
+
+    .description-of-service p {
+        font-size: 2.2rem;
+    }
+
+    .photos-of-service {
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: center;
+    }
+
+    .photos-of-service img {
+        width: 43%;
+        margin: 20px;
+    }
+
+    .contact .call-me img {
+        width: 350px;
+    }
+
+    .contact .call-me span {
+        font-size: 2.2rem;
+    }
+
+    .contact p {
+        font-size: 3.3rem
+    }
+
+    .contact p i {
+        font-size: 4rem;
     }
 }
