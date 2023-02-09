@@ -337,7 +337,6 @@ body {
     .contact p i {
         font-size: 3.7rem;
     }
-
 }
 
 /* tablets landscape and small desktops */
@@ -552,7 +551,6 @@ body {
 
     .aranzacja-zieleni {
         background-image: url(./images/subpages_backgrounds/xl_desktop/Aranzacja-ogrodu-instytucja.jpg);
-
     }
 
     .service-intro {
@@ -568,6 +566,4 @@ body {
         padding-right: 300px;
 
     }
-
-
 }
