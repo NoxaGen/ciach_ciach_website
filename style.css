@@ -55,11 +55,13 @@ html {
     position: relative;
     height: 100vh;
     background-color: var(--dark-grey-color);
-    width: 0%;
+    width: 60%;
+    left: 60%;
+    transition: 1s;
 }
 
 .active-mobile-menu {
-    width: 60%;
+    left: 0%;
 }
 
 /* active class have arround 60% width from mobile.menu */
