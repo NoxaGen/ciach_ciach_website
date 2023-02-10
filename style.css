@@ -69,7 +69,6 @@ html {
     height: 70px;
 }
 
-
 .fake-bar .hamburger {
     position: absolute;
     left: -70px;
@@ -88,7 +87,6 @@ html {
     text-decoration: none;
     list-style: none;
     padding-left: 20px;
-
 }
 
 .mobile-menu ul li,
@@ -718,6 +716,11 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         font-size: 2.4rem;
     }
 
+    .mobile-menu ul li,
+    .mobile-menu ul li a {
+        font-size: 2.4rem;
+    }
+
 
     .nav-bar .logo {
         width: 95px;
@@ -913,6 +916,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .introduction {
         background-image: url(./images/backgrounds_introduction/ogrod_noca_tablets_l_small_avg.jpg);
+        padding-bottom: 80px;
     }
 
     .introduction h1 {
@@ -923,6 +927,16 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         padding-left: 15%;
         padding-right: 15%;
     }
+
+    body>div>section.introduction>p {
+        margin-top: 30px;
+    }
+
+    .mobile-menu ul li,
+    .mobile-menu ul li a {
+        font-size: 2.6rem;
+    }
+
 
     .introduction button {
         width: 40%;
