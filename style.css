@@ -122,7 +122,7 @@ html {
     background-color: var(--green-darker);
     height: 40px;
     border: none;
-    border-radius: 1%;
+    border-radius: 2%;
     font-size: 1.2rem;
     color: var(--background-color);
     font-weight: 600;

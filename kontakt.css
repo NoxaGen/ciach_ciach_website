@@ -21,8 +21,13 @@
     --shadow-text-on-bigger-screens: 5px 5px 10px var(--dark-grey-color);
 }
 
+.wrapper {
+    background-color: var(--background-color-2);
+}
+
 .service-intro {
     background-image: url(./images/contact_images/ogrod_ziema_narzedzia_mobile_p.jpg);
+    position: relative;
 }
 
 .contact-us {
@@ -40,6 +45,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 10px 0px;
+    background-color: var(--background-color);
 }
 
 .contact-us div img {
@@ -76,18 +82,21 @@
 
 .contact-us div:nth-child(1) {
     border: solid 1px green;
+    background-color: rgba(8, 158, 8, 0.090);
     border-radius: 1%;
     padding: 10px;
 }
 
 .contact-us div:nth-child(2) {
     border: solid 1px red;
+    background-color: rgba(255, 0, 0, 0.090);
     border-radius: 1%;
     padding: 10px;
 }
 
 .contact-us div:nth-child(3) {
     border: solid 1px blue;
+    background-color: rgba(0, 0, 255, 0.090);
     border-radius: 1%;
     padding: 10px;
 }
@@ -96,13 +105,120 @@
 .contact-us div span {
     width: 100%;
     margin-top: 10px;
-    padding: 10-px;
+    padding: 10px;
     font-size: 1.2rem;
 }
 
-
-
-
 .contact-us img {
     width: 100px;
+}
+
+
+@media (orientation: landscape) {
+
+    .service-intro {
+        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_mobile_l_and_tablets_p.jpg);
+    }
+
+    .contact-us div {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .service-intro {
+        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_mobile_l_and_tablets_p.jpg);
+    }
+
+    .contact-us div {
+        width: 60vw;
+    }
+
+    .contact-us div p {
+        font-size: 2.8rem;
+    }
+
+    .contact-us div span {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+    .service-intro {
+        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_small_lap.jpg);
+    }
+
+    .contact-us {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .contact-us div {
+        width: 30%;
+        height: 300px;
+        margin: 10px;
+    }
+
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+    .service-intro {
+        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_avg_lap.jpg);
+    }
+
+    .contact-us div {
+        width: 25%;
+        height: 400px;
+        margin: 30px;
+    }
+
+    .contact-us div img {
+        width: 150px;
+    }
+}
+
+@media (min-width: 1400px) and (orientation: landscape) {
+    .service-intro {
+        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_avg_lap.jpg);
+    }
+
+    .contact-us div p {
+        font-size: 2.2rem;
+    }
+
+    .contact-us div span {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .contact-us>div:nth-child(3)>a>button {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .service-intro {
+        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_xl_lap.jpg);
+    }
+
+    .contact-us {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .contact-us div p {
+        font-size: 3rem;
+    }
+
+    .contact-us div span {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .contact-us>div:nth-child(3)>a>button {
+        font-size: 3rem;
+    }
 }
