@@ -20,19 +20,32 @@
 <body>
     <div class="wrapper">
         <div class="nav-bar">
-            <div class="logo"><a href="../index.html"><img src="../images/logotypes/ciach-ciach-logo-domek.png"
+            <div class="logo"><a href="../index.html"> <img src="../images/logotypes/ciach-ciach-logo-domek.png"
                         alt="Ciach Ciach - logo firmy (domek)"></a></div>
             <img src="../images/logotypes/ciach-ciach-logo-nozyce.png" alt="logo firmy 2 (napis + nożyce ogrodowe)"
                 class="logo2">
-            <div class="hamburger"><i class="fas fa-bars"></i></div>
-            <div class="desktop-menu">
+
+            <!-- <i class="fas fa-times"></i> - cross for menu and javascript -->
+
+            <nav class="mobile-menu">
+                <div class="fake-bar">
+                    <div class="hamburger"><i class="fas fa-bars"></i> </div>
+                </div>
                 <ul>
-                    <li>Strona Główna</li>
-                    <li>O Nas</li>
-                    <li>Usługi</li>
-                    <li>Kontakt</li>
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li id="about_us">O Nas</li>
+                    <li id="our_services">Usługi</li>
+                    <li><a href="../kontakt.html"> Kontakt</a></li>
                 </ul>
-            </div>
+            </nav>
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li id="about_us">O Nas</li>
+                    <li id="our_services">Usługi</li>
+                    <li><a href="../kontakt.html"> Kontakt</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="service-intro systemy-nawodnien">
             <h2>Systemy nawodnień</h2>
