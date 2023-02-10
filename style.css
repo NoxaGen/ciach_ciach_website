@@ -104,6 +104,7 @@ html {
 
 .nav-bar .logo {
     width: 70px;
+    cursor: pointer;
 }
 
 .nav-bar .logo2 {
