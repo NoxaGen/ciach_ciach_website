@@ -118,7 +118,6 @@ html {
     height: 100%;
 }
 
-
 .nav-bar .logo img {
     height: 100%;
 }
@@ -126,7 +125,6 @@ html {
 .nav-bar .hamburger {
     width: 80px;
     position: relative;
-
 }
 
 .nav-bar .hamburger i {
