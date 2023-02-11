@@ -42,19 +42,14 @@ ourServicesMobile.addEventListener('click', function () {
     scrollAutoMobileServices();
 });
 
-// for subpages, make function to jump on the subpage + scroll on desired section
+// this event listener checks flag and adjust scroll position
 
-const aboutUsSubMobile = document.querySelector('.about-us-subpage-mobile');
-const servicesSubMobile = document.querySelector('.services-subpage-mobile');
-
-
-
-aboutUsSubMobile.addEventListener('click', function () {
-    console.log('working');
-    mobileMenuBehaviour();
-    window.location.href = "../index.html";
-    scrollAutoMobileServices();
+window.addEventListener("load", function () {
+    if (window.location.hash === "#opinions-id") {
+        scrollAutoMobileOpinions();
+    }
 });
+
 
 
 
