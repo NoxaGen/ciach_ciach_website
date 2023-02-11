@@ -42,11 +42,13 @@ ourServicesMobile.addEventListener('click', function () {
     scrollAutoMobileServices();
 });
 
-// this event listener checks flag and adjust scroll position
+// this event listener checks flags and adjust scroll position
 
 window.addEventListener("load", function () {
     if (window.location.hash === "#opinions-id") {
         scrollAutoMobileOpinions();
+    } else if (window.location.hash === "#services-id") {
+        scrollAutoMobileServices();
     }
 });
 
