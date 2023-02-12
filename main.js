@@ -52,7 +52,29 @@ window.addEventListener("load", function () {
     }
 });
 
+// button from the main index site need to scroll too
+
+const mainBtn = document.getElementById('check-our-offer');
+const aboutUsDesktop = document.querySelector('.about-us-desktop');
+const servicesDesktop = document.querySelector('.services-desktop');
 
 
+function scrollAutoDesktopServices() {
+    window.scroll(0, services.offsetTop);
+};
 
-// desktop scroll to desired section
+function scrollAutoDesktopOpinions() {
+    window.scroll(0, opinions.offsetTop);
+};
+
+mainBtn.addEventListener('click', function () {
+    scrollAutoDesktopServices();
+});
+
+servicesDesktop.addEventListener('click', function () {
+    scrollAutoDesktopServices();
+});
+
+aboutUsDesktop.addEventListener('click', function () {
+    scrollAutoDesktopOpinions();
+});
