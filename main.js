@@ -52,7 +52,7 @@ window.addEventListener("load", function () {
     }
 });
 
-// button from the main index site need to scroll too
+// all desktop buttons are plugged and working good
 
 const mainBtn = document.getElementById('check-our-offer');
 const aboutUsDesktop = document.querySelector('.about-us-desktop');
@@ -78,3 +78,31 @@ servicesDesktop.addEventListener('click', function () {
 aboutUsDesktop.addEventListener('click', function () {
     scrollAutoDesktopOpinions();
 });
+
+// slider script 
+
+const slider = document.querySelector('.slider');
+const images = slider.querySelectorAll('img');
+let currentIndex = 0;
+
+// function that setting or removing class .active for every image
+const setActiveImage = () => {
+    images.forEach((image, index) => {
+        image.classList.remove('active');
+        if (index === currentIndex) {
+            image.classList.add('active');
+        }
+    });
+}
+
+// function that tell us what next image will be active
+const nextImage = () => {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+    setActiveImage();
+}
+
+// interval, we can set speed of slider
+setInterval(nextImage, 3000);
