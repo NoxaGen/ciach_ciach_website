@@ -26,7 +26,7 @@
 }
 
 .service-intro {
-    background-image: url(./images/contact_images/ogrod_ziema_narzedzia_mobile_p.jpg);
+    background-image: url(../images/contact_images/ogrod_ziema_narzedzia_mobile_p.jpg);
     position: relative;
 }
 
@@ -117,7 +117,7 @@
 @media (orientation: landscape) {
 
     .service-intro {
-        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_mobile_l_and_tablets_p.jpg);
+        background-image: url(../images/contact_images/ogrod_ziema_narzedzia_mobile_l_and_tablets_p.jpg);
     }
 
     .contact-us div {
@@ -127,7 +127,7 @@
 
 @media (min-width: 768px) and (orientation: portrait) {
     .service-intro {
-        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_mobile_l_and_tablets_p.jpg);
+        background-image: url(../images/contact_images/ogrod_ziema_narzedzia_mobile_l_and_tablets_p.jpg);
     }
 
     .contact-us div {
@@ -145,7 +145,7 @@
 
 @media (min-width: 992px) and (orientation: landscape) {
     .service-intro {
-        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_small_lap.jpg);
+        background-image: url(../images/contact_images/ogrod_ziema_narzedzia_small_lap.jpg);
     }
 
     .contact-us {
@@ -166,7 +166,7 @@
 
 @media (min-width: 1200px) and (orientation: landscape) {
     .service-intro {
-        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_avg_lap.jpg);
+        background-image: url(../images/contact_images/ogrod_ziema_narzedzia_avg_lap.jpg);
     }
 
     .contact-us div {
@@ -182,7 +182,7 @@
 
 @media (min-width: 1400px) and (orientation: landscape) {
     .service-intro {
-        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_avg_lap.jpg);
+        background-image: url(../images/contact_images/ogrod_ziema_narzedzia_avg_lap.jpg);
     }
 
     .contact-us div p {
@@ -201,7 +201,7 @@
 
 @media (min-width: 1920px) {
     .service-intro {
-        background-image: url(./images/contact_images/ogrod_ziema_narzedzia_xl_lap.jpg);
+        background-image: url(../images/contact_images/ogrod_ziema_narzedzia_xl_lap.jpg);
     }
 
     .contact-us {
