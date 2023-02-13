@@ -1,4 +1,5 @@
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -39,7 +40,11 @@ html {
 .nav-bar {
     position: fixed;
     top: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100vw;
     height: 70px;
@@ -58,6 +63,8 @@ html {
     background-color: var(--dark-grey-color);
     width: 60%;
     left: 60%;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -80,9 +87,18 @@ html {
 }
 
 .mobile-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 80%;
     height: 40%;
@@ -114,6 +130,8 @@ html {
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     height: 100%;
 }
@@ -132,17 +150,25 @@ html {
     display: block;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 2rem;
     z-index: 9;
 }
 
 .introduction {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     margin-top: 70px;
     z-index: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 100%;
     height: 90vh;
@@ -204,18 +230,28 @@ html {
     top: 0%;
     left: 50%;
     color: var(--background-color);
+    -webkit-animation: arrow 3s infinite linear;
     animation: arrow 3s infinite linear;
 }
 
 .introduction button span i {
     position: absolute;
     font-size: 1.5rem;
+    -webkit-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);
     transform: translate(-50%, -150%);
 }
 
 .what-we-do {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-color: var(--background-color-2);
     width: 100vw;
@@ -232,6 +268,7 @@ html {
     border: none;
     border-radius: 1%;
     /* overflow: hidden; */
+    -webkit-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
 }
 
@@ -239,11 +276,16 @@ html {
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0;
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
     transition: 1s linear;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 1%;
 }
@@ -261,7 +303,12 @@ html {
 }
 
 .what-we-do .small-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     width: 84vw;
 }
@@ -270,6 +317,8 @@ html {
     position: relative;
     margin-left: 8vw;
     border-bottom: 1px solid var(--dark-grey-color);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 45%;
 }
@@ -311,16 +360,24 @@ html {
 }
 
 .full-list-services .service {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100vw;
     margin: 40px 0px;
     background-color: var(--background-color-2);
     border-radius: 1%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .full-list-services .service:hover {
+    -webkit-box-shadow: 0px 0px 0px 1px var(--green-lighter);
     box-shadow: 0px 0px 0px 1px var(--green-lighter);
     cursor: pointer;
 }
@@ -347,6 +404,8 @@ html {
 .full-list-services .service p strong {
     padding: 0px 7.5vw;
     font-size: 1.3rem;
+    -webkit-transform: none;
+    -ms-transform: none;
     transform: none;
     text-align: left;
     display: inline;
@@ -412,13 +471,21 @@ section.opinions>div:nth-child(5) {
 
 .opinions .opinion .white-box {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 10px 5px;
     bottom: 10%;
     border-radius: 2%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 80%;
     height: 160px;
@@ -435,18 +502,32 @@ section.opinions>div:nth-child(5) {
 }
 
 footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     font-family: var(--title-font);
     color: var(--background-color);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: var(--footer-background);
 }
 
 .main-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -539,6 +620,7 @@ footer .rights a {
     .full-list-services .service .img-of-service {
         width: 70%;
         height: 100%;
+        -o-object-fit: cover;
         object-fit: cover;
         overflow: hidden;
     }
@@ -612,8 +694,14 @@ footer .rights a {
     }
 
     .main-footer {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -644,6 +732,9 @@ footer .rights a {
     }
 
     .what-we-do {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
         padding: 0px 5vw;
     }
@@ -695,14 +786,22 @@ footer .rights a {
     }
 
     .main-footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     }
 }
 
 @media (min-width: 375px) and (orientation: landscape) {
     .main-footer {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 }
@@ -781,7 +880,11 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .what-we-do {
         padding: 0px 7.5vw;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
     }
 
@@ -892,8 +995,13 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .main-footer {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         width: 100%;
     }
@@ -1112,11 +1220,14 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .what-we-do {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
     .what-we-do .description {
         padding: 20px;
+        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     }
 
@@ -1201,8 +1312,14 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .nav-bar .desktop-menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         width: 100%;
         height: 100%;
@@ -1213,6 +1330,8 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     .nav-bar .desktop-menu ul li a {
         font-size: 1.5rem;
         border-bottom: 3px var(--background-color) solid;
+        -webkit-transition: 0.1s;
+        -o-transition: 0.1s;
         transition: 0.1s;
     }
 
@@ -1228,6 +1347,8 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .introduction {
         margin-top: 0px;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: flex-start;
         height: calc(100vh - 70px);
         background-image: url(./images/backgrounds_introduction/ogrod_noca_desktop_small_bright.jpg);
@@ -1268,6 +1389,8 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .what-we-do .slider {
         width: 36%;
+        -webkit-transform: translateY(-120px);
+        -ms-transform: translateY(-120px);
         transform: translateY(-120px);
         z-index: 5;
     }
@@ -1317,14 +1440,23 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         left: 5vw;
         top: 50%;
         height: 30px;
+        -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
         transform: translateY(5px);
     }
 
     .services-container {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 
@@ -1395,9 +1527,16 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     .opinions {
         background-color: var(--background-color);
         overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         width: 100%;
     }
@@ -1424,9 +1563,18 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .opinions .small-stats {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         width: 33%;
         margin-top: 60px;
@@ -1453,6 +1601,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         margin: 0px;
         margin-bottom: 100px;
         border-radius: 1%;
+        -webkit-box-shadow: var(--shadow);
         box-shadow: var(--shadow);
     }
 
@@ -1462,11 +1611,15 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .opinions>div:nth-child(4) {
         background-image: url(./images/desktop_opinions/piekny-ogrod.jpg);
+        -webkit-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
         transform: translateY(-100px);
     }
 
     .opinions>div:nth-child(5) {
         background-image: url(./images/desktop_opinions/fontanna-przy-firmie.jpg);
+        -webkit-transform: translateY(35px);
+        -ms-transform: translateY(35px);
         transform: translateY(35px)
     }
 
@@ -1482,6 +1635,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .main-footer {
         width: 90%;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 }
@@ -1492,6 +1646,8 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 @media (min-width: 1200px) and (orientation: landscape) {
     .introduction {
         background-image: url(./images/backgrounds_introduction/ogrod_noca_desktop_1200_bright.jpg);
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -1587,11 +1743,15 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
     .what-we-do .slider {
         height: 850px;
+        -webkit-transform: translateY(-200px);
+        -ms-transform: translateY(-200px);
         transform: translateY(-200px);
     }
 
     .what-we-do .description h2 {
         font-size: 8rem;
+        -webkit-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
         transform: translateY(-50px);
     }
 
@@ -1610,58 +1770,137 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
 /* animations */
 
-@keyframes arrow {
+@-webkit-keyframes arrow {
     0% {
+        -webkit-transform: translateY(-300px);
         transform: translateY(-300px);
         opacity: 0.5;
     }
 
     10% {
+        -webkit-transform: translateY(-250px);
         transform: translateY(-250px);
         opacity: 0.6;
     }
 
     20% {
+        -webkit-transform: translateY(-200px);
         transform: translateY(-200px);
         opacity: 0.7;
     }
 
     30% {
+        -webkit-transform: translateY(-150px);
         transform: translateY(-150px);
         opacity: 0.7;
     }
 
     40% {
+        -webkit-transform: translateY(-100px);
         transform: translateY(-100px);
         opacity: 0.8;
     }
 
     50% {
+        -webkit-transform: translateY(-50px);
         transform: translateY(-50px);
         opacity: 0.9;
     }
 
     60% {
+        -webkit-transform: translateY(0px);
         transform: translateY(0px);
         opacity: 1;
     }
 
     70% {
+        -webkit-transform: translateY(0px);
         transform: translateY(0px);
         opacity: 1;
     }
 
     80% {
+        -webkit-transform: translateY(0px);
         transform: translateY(0px);
         opacity: 1;
     }
 
     90% {
+        -webkit-transform: translateY(0px);
         transform: translateY(0px);
         opacity: 1;
     }
 
     100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        -webkit-transform: translateY(-300px);
+        transform: translateY(-300px);
+        opacity: 0.5;
+    }
+
+    10% {
+        -webkit-transform: translateY(-250px);
+        transform: translateY(-250px);
+        opacity: 0.6;
+    }
+
+    20% {
+        -webkit-transform: translateY(-200px);
+        transform: translateY(-200px);
+        opacity: 0.7;
+    }
+
+    30% {
+        -webkit-transform: translateY(-150px);
+        transform: translateY(-150px);
+        opacity: 0.7;
+    }
+
+    40% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 0.8;
+    }
+
+    50% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0.9;
+    }
+
+    60% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    70% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    90% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
         transform: translateY(0px);
         opacity: 1;
     }
