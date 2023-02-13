@@ -1206,41 +1206,60 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
 /* double screen phones like Samsung Galaxy Floyd 4 */
 
-@media (min-width: 900px) and (max-width: 911px) and (orientation: portrait) {
+@media (min-width: 689.1px) and (max-width: 692.1px) and (min-height: 828.1px) and (orientation: portrait) {
+
     .introduction {
         background-image: url(.//images/backgrounds_introduction/domek-w-ogrodzie-background-floyd.jpg);
     }
 
     .introduction h1 {
-        font-size: 6rem;
+        font-size: 4rem;
+    }
+
+    .introduction p {
+        font-size: 2rem;
     }
 
     .introduction button {
         margin-bottom: 35px;
+        width: 50%;
+        font-size: 2rem;
     }
 
     .what-we-do {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    body>div>section.what-we-do {
+        width: 100vw;
     }
 
     .what-we-do .description {
-        padding: 20px;
+        width: 50%;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+        margin: 0px;
+    }
+
+    .what-we-do .description .small-title span {
+        width: 25%;
     }
 
     .what-we-do .description ul li {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .what-we-do .slider {
-        width: 47%;
+        width: 50%;
+        height: 600px;
+        margin-right: 20px;
     }
 
     .services-container .service .img-of-service {
-        height: 500px;
+        height: 300px;
     }
 
     .full-list-services>div.services-container>div:nth-child(1)>div>img {
@@ -1722,7 +1741,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
 
 /* laptops and screens like tv above 1920px */
 
-@media (min-width: 1920px) {
+@media (min-width: 1880px) {
 
     .nav-bar {
         padding: 0px 350px;
