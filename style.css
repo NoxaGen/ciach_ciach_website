@@ -354,8 +354,13 @@ html {
     line-height: 150%;
 }
 
+.full-list-services .service p {
+    font-weight: 300;
+}
+
 .full-list-services .service p strong {
     padding: 0px;
+    font-weight: 300;
 }
 
 .full-list-services .service button {
@@ -894,6 +899,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 }
 
+
 /* tablets portrait  */
 
 @media (min-width: 768px) and (orientation: portrait) {
@@ -1090,6 +1096,74 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 }
 
+/* double screen phones like Samsung Galaxy Floyd 4 */
+
+@media (min-width: 900px) and (max-width: 911px) and (orientation: portrait) {
+    .introduction {
+        background-image: url(.//images/backgrounds_introduction/domek-w-ogrodzie-background-floyd.jpg);
+    }
+
+    .introduction h1 {
+        font-size: 6rem;
+    }
+
+    .introduction button {
+        margin-bottom: 35px;
+    }
+
+    .what-we-do {
+        justify-content: center;
+    }
+
+    .what-we-do .description {
+        padding: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .what-we-do .description ul li {
+        font-size: 2rem;
+    }
+
+    .what-we-do .slider {
+        width: 47%;
+    }
+
+    .services-container .service .img-of-service {
+        height: 500px;
+    }
+
+    .full-list-services>div.services-container>div:nth-child(1)>div>img {
+        content: url(./images/floyd_background/ogrodnik-zakladanie-ogrodu.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(2)>div>img {
+        content: url(./images/floyd_background/ogrodnik-pielegnacja-ogrodu.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(3)>div>img {
+        content: url(./images/floyd_background/zraszacz-systemy-nawodnien.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(4)>div>img {
+        content: url(./images/floyd_background/aranzacja-zieleni.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(5)>div>img {
+        content: url(./images/floyd_background/outsourcing-grafika.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(6)>div>img {
+        content: url(./images/floyd_background/oprysk-chemiczny.jpg);
+    }
+
+    .full-list-services>div.services-container>div:nth-child(7)>div>img {
+        content: url(./images/floyd_background/pracownicy-budowlani.jpg);
+    }
+
+
+
+}
+
 /* and (min-height: 800px) */
 /* small desktops and landscape tablets */
 @media (min-width: 992px) and (orientation: landscape) {
@@ -1265,7 +1339,6 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     .full-list-services .service p {
         margin: 0vw;
         padding: 15px;
-        font-weight: 400;
     }
 
     .full-list-services .service p,
