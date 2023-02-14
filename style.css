@@ -1328,6 +1328,7 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     #opinions-id>div.small-title-3>p:nth-child(3) {
         padding-left: 8vw;
         font-size: 1.6rem;
+        font-weight: 300;
     }
 
     .opinions {
@@ -1335,6 +1336,18 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #opinions-id>div:nth-child(3) {
+        background-image: url(./images/desktop_opinions/podlewanie-ogrodu.jpg);
+    }
+
+    #opinions-id>div:nth-child(3) {
+        background-image: url(./images/desktop_opinions/piekny-ogrod.jpg);
+    }
+
+    #opinions-id>div:nth-child(3) {
+        background-image: url(./images/desktop_opinions/fontanna-przy-firmie.jpg);
     }
 
     .opinions .opinion {
@@ -1345,17 +1358,14 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
         box-shadow: var(--shadow);
     }
 
-    .opinions .opinion .white-box {
-        height: 200px;
-    }
-
     .opinions .opinion .white-box p {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .main-footer {
         flex-direction: row;
     }
+
 }
 
 /* and (min-height: 800px) */
