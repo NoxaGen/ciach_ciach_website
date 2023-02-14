@@ -1,4 +1,7 @@
-Options +FollowSymLinks
-RewriteEngine on
-RewriteCond %{HTTPS} off 
-RewriteRule ^(.*)$ https://www.ciach-ogrody.pl/$1 [r=301,nc]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^ciach-ogrody\.pl [NC]
+RewriteRule ^(.*)$ http://www.ciach-ogrody.pl/$1 [L,R=301]
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^ciach-ogrody\.pl [NC]
+RewriteRule ^(.*)$ https://www.ciach-ogrody.pl/$1 [L,R=301]
