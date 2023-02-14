@@ -1259,39 +1259,103 @@ testes on the phone models: iPhoneSE, iPhone 5/6/7/8/11-12pro + iPhone X */
     }
 
     .services-container .service .img-of-service {
-        height: 300px;
+        height: 366px;
+        width: 550px;
+        margin-bottom: 20px;
     }
 
     .full-list-services>div.services-container>div:nth-child(1)>div>img {
-        content: url(./images/floyd_background/ogrodnik-zakladanie-ogrodu.jpg);
+        content: url(./images/mobile_horizontal/services_main_page/ogrodnik-zakladanie-ogrodu.jpg);
     }
 
     .full-list-services>div.services-container>div:nth-child(2)>div>img {
-        content: url(./images/floyd_background/ogrodnik-pielegnacja-ogrodu.jpg);
+        content: url(./images/mobile_horizontal/services_main_page/ogrodnik-pielegnacja-ogrodu.jpg);
     }
 
     .full-list-services>div.services-container>div:nth-child(3)>div>img {
-        content: url(./images/floyd_background/zraszacz-systemy-nawodnien.jpg);
+        content: url(./images/mobile_horizontal/services_main_page/zraszacz-systemy-nawodnien.jpg);
     }
 
     .full-list-services>div.services-container>div:nth-child(4)>div>img {
-        content: url(./images/floyd_background/aranzacja-zieleni.jpg);
+        content: url(./images/mobile_horizontal/services_main_page/aranzacja-zieleni.jpg);
     }
 
     .full-list-services>div.services-container>div:nth-child(5)>div>img {
-        content: url(./images/floyd_background/outsourcing-grafika.jpg);
+        content: url(./images/mobile_horizontal/services_main_page/outsourcing-grafika.jpg);
     }
 
     .full-list-services>div.services-container>div:nth-child(6)>div>img {
-        content: url(./images/floyd_background/oprysk-chemiczny.jpg);
+        content: url(./images/mobile_horizontal/services_main_page/oprysk-ogrodu.jpg);
     }
 
     .full-list-services>div.services-container>div:nth-child(7)>div>img {
-        content: url(./images/floyd_background/pracownicy-budowlani.jpg);
+        content: url(./images/mobile_horizontal/services_main_page/pracownicy-budowlani.jpg);
     }
 
+    /* .full-list-services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
 
+    .full-list-services .service {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .full-list-services .service p,
+    .full-list-services .service h3 {
+        width: 550px;
+        padding: 0px;
+        margin: 0px;
+        font-size: 1.8rem;
+    }
+
+    .full-list-services .service h3 {
+        font-size: 2.2rem;
+    }
+
+    .full-list-services .service button {
+        margin-top: 20px;
+        width: 270px;
+        font-size: 2.0rem;
+        height: 50px;
+    }
+
+    #opinions-id>div.small-title-3>p:nth-child(1),
+    #opinions-id>div.small-title-3>p:nth-child(3) {
+        padding-left: 8vw;
+        font-size: 1.6rem;
+    }
+
+    .opinions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opinions .opinion {
+        width: 580px;
+        height: 785px;
+        margin-bottom: 10px;
+        border-radius: 1%;
+        box-shadow: var(--shadow);
+    }
+
+    .opinions .opinion .white-box {
+        height: 200px;
+    }
+
+    .opinions .opinion .white-box p {
+        font-size: 1.8rem;
+    }
+
+    .main-footer {
+        flex-direction: row;
+    }
 }
 
 /* and (min-height: 800px) */
